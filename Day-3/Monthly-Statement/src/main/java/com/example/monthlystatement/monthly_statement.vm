@@ -1,0 +1,42 @@
+#set($newline = "\n")
+<html>
+<head>
+    <title>Monthly Statement</title>
+</head>
+<body>
+    <h1>Bank Monthly Statement</h1>
+    <h2>User Information</h2>
+    <p>User ID: $user.id</p>
+    <p>Name: $user.name</p>
+    <p>Email: $user.email</p>
+    <p>Address: $user.address</p>
+    <p>Customer Account Number: $user.accountNumber</p>
+
+    <h2>Transaction History</h2>
+    <table border="1">
+        <tr>
+            <th>Date</th>
+            <th>Description</th>
+            <th>Amount</th>
+            <th>Balance</th>
+        </tr>
+        #foreach($transaction in $transactions)
+        <tr>
+            <td>$transaction.date</td>
+            <td>$transaction.description</td>
+            <td>$transaction.amount</td>
+            <td>$transaction.balance</td>
+        </tr>
+        #end
+    </table>
+
+    <h2>Account Summary</h2>
+    <p>Total Deposits: $accountSummary.totalDeposits</p>
+    <p>Total Withdrawals: $accountSummary.totalWithdrawals</p>
+    <p>Ending Balance: $accountSummary.endingBalance</p>
+
+    <h2>Bank Details</h2>
+    <p>Bank Name: $bank.name</p>
+    <p>Bank Address: $bank.address</p>
+</body>
+</html>
