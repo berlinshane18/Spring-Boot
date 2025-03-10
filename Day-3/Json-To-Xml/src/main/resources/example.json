@@ -1,0 +1,25 @@
+{
+  "user": {
+    "id": "123",
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "address": {
+      "street": "123 Main St",
+      "city": "Anytown",
+      "state": "CA",
+      "zip": "12345"
+    },
+    "transactions": [
+      {
+        "date": "2025-02-01",
+        "description": "Deposit",
+        "amount": 1000.00
+      },
+      {
+        "date": "2025-02-15",
+        "description": "Withdrawal",
+        "amount": -200.00
+      }
+    ]
+  }
+}

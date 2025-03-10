@@ -1,0 +1,21 @@
+<user>
+    <address>
+        <zip>12345</zip>
+        <city>Anytown</city>
+        <street>123 Main St</street>
+        <state>CA</state>
+    </address>
+    <name>John Doe</name>
+    <id>123</id>
+    <transactions>
+        <date>2025-02-01</date>
+        <amount>1000.00</amount>
+        <description>Deposit</description>
+    </transactions>
+    <transactions>
+        <date>2025-02-15</date>
+        <amount>-200.00</amount>
+        <description>Withdrawal</description>
+    </transactions>
+    <email>john.doe@example.com</email>
+</user>
