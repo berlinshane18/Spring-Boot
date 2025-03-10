@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Resume</title>
+</head>
+<body>
+<h1 th:text="${resume.name}">Name</h1>
+<h2>Skills</h2>
+<ul>
+    <li th:each="skill : ${resume.skills}" th:text="${skill}">Skill</li>
+</ul>
+<h2>Education</h2>
+<p>Degree: <span th:text="${resume.education.degree}">Degree</span></p>
+<p>Institution: <span th:text="${resume.education.institution}">Institution</span></p>
+<p>Year: <span th:text="${resume.education.year}">Year</span></p>
+<h2>Contact</h2>
+<p>Email: <span th:text="${resume.contact.email}">Email</span></p>
+<p>Phone: <span th:text="${resume.contact.phone}">Phone</span></p>
+<p>Address: <span th:text="${resume.contact.address}">Address</span></p>
+<h2>Experience</h2>
+<p>Job Title: <span th:text="${resume.experience.jobTitle}">Job Title</span></p>
+<p>Company: <span th:text="${resume.experience.company}">Company</span></p>
+<p>Start Date: <span th:text="${resume.experience.startDate}">Start Date</span></p>
+<p>End Date: <span th:text="${resume.experience.endDate}">End Date</span></p>
+<h3>Responsibilities</h3>
+<ul>
+    <li th:each="responsibility : ${resume.experience.responsibilities}" th:text="${responsibility}">Responsibility</li>
+</ul>
+<h3>Skills</h3>
+<ul>
+    <li th:each="skill : ${resume.experience.skills}" th:text="${skill}">Skill</li>
+</ul>
+</body>
+</html>
